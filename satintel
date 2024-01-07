@@ -23,4 +23,5 @@ func setEnvironmentalVariable(envKey string) string {
 		fmt.Printf("Error setting environment variable %s: %v\n", envKey, err)
 		os.Exit(1)
 	}
+	return input
 }
