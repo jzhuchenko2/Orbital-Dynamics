@@ -1,0 +1,10 @@
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+
+	"github.com/ANG13T/SatIntel/cli"
+)
