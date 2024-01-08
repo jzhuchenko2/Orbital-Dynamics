@@ -25,3 +25,9 @@ func setEnvironmentalVariable(envKey string) string {
 	}
 	return input
 }
+func checkEnvironmentalVariable(envKey string) {
+	_, found := os.LookupEnv(envKey)
+	if !found {
+		setEnvironmentalVariable()
+	}
+}
