@@ -28,6 +28,6 @@ func setEnvironmentalVariable(envKey string) string {
 func checkEnvironmentalVariable(envKey string) {
 	_, found := os.LookupEnv(envKey)
 	if !found {
-		setEnvironmentalVariable()
+		setEnvironmentalVariable(envKey)
 	}
 }
