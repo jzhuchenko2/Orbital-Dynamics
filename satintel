@@ -1,3 +1,6 @@
+from Spacecraft import Spacecraft as SC
+from planetary_data import earth
+
 package main
 
 import (
