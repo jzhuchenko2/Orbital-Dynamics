@@ -48,9 +48,12 @@ double x1_0 = 0.0;
 double x2_0 = 0.0;
 double x3_0 = 0.0;
 double x4_0 = 0.0;
+//initial time ('t0') are defined
 double t0 = 0.0;
 
 // Define time span
+
+//Time Span for Ordinary Differential Equations (ODEs) VECTORS
 double tf = 10.0;
 vector<double> tspan = {t0, tf};
 
