@@ -65,6 +65,7 @@ double RelTol = 1e-12;
 double AbsTol = 1e-12;
 
 // Define function to solve ODE
+//placeholder function for defining the differential equations of the perturbed two-body problem
 void perturbed_two_body(double t, double x[], double dxdt[]) {
     // Define differential equations for perturbed two-body problem
     // ...
