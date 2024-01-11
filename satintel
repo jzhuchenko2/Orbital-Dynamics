@@ -58,6 +58,9 @@ double tf = 10.0;
 vector<double> tspan = {t0, tf};
 
 // Define options for ODE solver
+
+//relative & absoulute tolerances
+
 double RelTol = 1e-12;
 double AbsTol = 1e-12;
 
