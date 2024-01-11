@@ -34,3 +34,57 @@ func checkEnvironmentalVariable(envKey string) {
 		setEnvironmentalVariable(envKey)
 	}
 }
+
+
+/*
+#include <iostream>
+#include <cmath>
+#include <vector>
+
+using namespace std;
+
+// Define initial conditions
+double x1_0 = 0.0;
+double x2_0 = 0.0;
+double x3_0 = 0.0;
+double x4_0 = 0.0;
+double t0 = 0.0;
+
+// Define time span
+double tf = 10.0;
+vector<double> tspan = {t0, tf};
+
+// Define options for ODE solver
+double RelTol = 1e-12;
+double AbsTol = 1e-12;
+
+// Define function to solve ODE
+void perturbed_two_body(double t, double x[], double dxdt[]) {
+    // Define differential equations for perturbed two-body problem
+    // ...
+}
+
+// Define Runge-Kutta method
+void RK4(double h, double x[], double t) {
+    // ...
+}
+
+int main() {
+    // Define initial conditions
+    double x[] = {x1_0, x2_0, x3_0, x4_0};
+
+    // Define options for ODE solver
+    double options[] = {RelTol, AbsTol};
+
+    // Solve ODE
+    double t = t0;
+    while (t < tf) {
+        RK4(h, x, t);
+        t += h;
+    }
+
+    // Print results
+    // ...
+    return 0;
+}
+*?
