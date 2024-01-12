@@ -72,6 +72,10 @@ void perturbed_two_body(double t, double x[], double dxdt[]) {
 }
 
 // Define Runge-Kutta method
+//the implementation details are also not provided in the code snippet.
+
+//The perturbed two-body problem involves the motion of two celestial bodies under the influence of gravitational forces from other bodies, causing perturbations in their orbits.
+
 void RK4(double h, double x[], double t) {
     // ...
 }
