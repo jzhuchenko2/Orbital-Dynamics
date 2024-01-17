@@ -75,6 +75,13 @@ void perturbed_two_body(double t, double x[], double dxdt[]) {
 	//defined the constant masses
 	double m1 = 1.0; // Mass of body 1
     	double m2 = 1.0; // Mass of body 2
+
+
+//positions & velocities
+	double x1 = x[0];
+    double x2 = x[1];
+    double x3 = x[2];
+    double x4 = x[3];
 }
 
 // Define Runge-Kutta method
