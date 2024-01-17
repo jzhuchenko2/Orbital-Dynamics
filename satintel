@@ -69,6 +69,8 @@ double AbsTol = 1e-12;
 void perturbed_two_body(double t, double x[], double dxdt[]) {
     // Define differential equations for perturbed two-body problem
     // ...
+// defining gravitational constant
+	double G = 6.67430e-11;
 }
 
 // Define Runge-Kutta method
