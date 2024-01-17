@@ -71,6 +71,10 @@ void perturbed_two_body(double t, double x[], double dxdt[]) {
     // ...
 // defining gravitational constant
 	double G = 6.67430e-11;
+
+	//defined the constant masses
+	double m1 = 1.0; // Mass of body 1
+    	double m2 = 1.0; // Mass of body 2
 }
 
 // Define Runge-Kutta method
