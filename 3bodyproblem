@@ -1,0 +1,9 @@
+#include <iostream>
+#include <vector>
+
+class Body {
+public:
+    double mass;
+    double x, y; // Position
+    double vx, vy;
+};
