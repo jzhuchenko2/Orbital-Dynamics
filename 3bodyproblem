@@ -4,9 +4,13 @@
 //gravitational constant
 const double G = 6.67430e-11;
 
-class Body {
+class Satellite {
 public:
     double mass;
-    double x, y; // Position
-    double vx, vy;
+    double x, y; // Position in 2D space
+    double vx, vy; Velocity Componenents
+
+    Satellite(double m, double initialX, double initialY, double initialVx, double initialVy)
+        : mass(m), x(initialX), y(initialY), vx(initialVx), vy(initialVy) {}
+
 };
