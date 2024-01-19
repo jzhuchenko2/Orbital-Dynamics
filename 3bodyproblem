@@ -10,6 +10,7 @@ public:
     double x, y; // Position in 2D space
     double vx, vy; Velocity Componenents
 
+    //this is a constructor for a Satellite class in C++. it initializes a new instance of the Satellite class with the provided parameters.
     Satellite(double m, double initialX, double initialY, double initialVx, double initialVy)
         : mass(m), x(initialX), y(initialY), vx(initialVx), vy(initialVy) {}
 
