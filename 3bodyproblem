@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
 
+//gravitational constant
+const double G = 6.67430e-11;
+
 class Body {
 public:
     double mass;
