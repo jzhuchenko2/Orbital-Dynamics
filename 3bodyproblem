@@ -1,8 +1,14 @@
 #include <iostream>
+#include <cmath>
 #include <vector>
 
-//gravitational constant
+using namesapce std;
+
+//gravitational constants
 const double G = 6.67430e-11;
+const double M1 = 5.972e24; //Earth mass HUGE
+const double M2 = 7.342e22; // Moon mass
+const double R1 = 3.844e8;  // Earth-Moon distance
 
 class Satellite {
 public:
