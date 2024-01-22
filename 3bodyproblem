@@ -30,6 +30,7 @@ public:
 
         // Components of forces along x and y axes
         fx = force1 * (-(x + R1) / r1) + force2 * ((x - (1.0 - R1)) / r2);
+        fy = force1 * (-y / r1) + force2 * (y / r2);
     }
 
 };
