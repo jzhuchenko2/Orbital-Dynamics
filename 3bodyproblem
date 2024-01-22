@@ -27,6 +27,9 @@ public:
         // Gravitational forces from Earth and Moon
         double force1 = G * M1 * mass / (r1 * r1);
         double force2 = G * M2 * mass / (r2 * r2);
+
+        // Components of forces along x and y axes
+        fx = force1 * (-(x + R1) / r1) + force2 * ((x - (1.0 - R1)) / r2);
     }
 
 };
