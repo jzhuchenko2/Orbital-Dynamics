@@ -22,6 +22,11 @@ public:
 
     void calculateGravity(double& fx, double& fy) {
         double r1 = sqrt((x + R1) * (x + R1) + y * y);
+        double r2 = sqrt((x - (1.0 - R1)) * (x - (1.0 - R1)) + y * y);
+
+        // Gravitational forces from Earth and Moon
+        double force1 = G * M1 * mass / (r1 * r1);
+        double force2 = G * M2 * mass / (r2 * r2);
     }
 
 };
