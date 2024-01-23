@@ -31,6 +31,13 @@ public:
         // Components of forces along x and y axes
         fx = force1 * (-(x + R1) / r1) + force2 * ((x - (1.0 - R1)) / r2);
         fy = force1 * (-y / r1) + force2 * (y / r2);
+
+The forces are calculated by considering the inverse square law for gravity and the positions of the object relative to Earth and Moon.
+The components are determined by multiplying the gravitational forces with the corresponding unit vectors along the x and y axes.
+//now using the RKF45 method to update position and velocity 
+    void update(double& dt) {
+        double k1x, k1y, k2x, k2y, k3x, k3y, k4x, k4y, k5x, k5y, k6x, k6y;
+        double fx, fy;
     }
 
 };
