@@ -50,6 +50,10 @@ The components are determined by multiplying the gravitational forces with the c
         calculateGravity(fx, fy);
         k3x = dt * (vx + 3.0 / 32.0 * k1x + 9.0 / 32.0 * k2x);
         k3y = dt * (vy + 3.0 / 32.0 * k1y + 9.0 / 32.0 * k2y);
+
+        calculateGravity(fx, fy);
+        k4x = dt * (vx + 1932.0 / 2197.0 * k1x - 7200.0 / 2197.0 * k2x + 7296.0 / 2197.0 * k3x);
+        k4y = dt * (vy + 1932.0 / 2197.0 * k1y - 7200.0 / 2197.0 * k2y + 7296.0 / 2197.0 * k3y);
     }
 
 };
