@@ -65,6 +65,11 @@ The components are determined by multiplying the gravitational forces with the c
 
         x += 25.0 / 216.0 * k1x + 1408.0 / 2565.0 * k3x + 2197.0 / 4104.0 * k4x - 1.0 / 5.0 * k5x;
         y += 25.0 / 216.0 * k1y + 1408.0 / 2565.0 * k3y + 2197.0 / 4104.0 * k4y - 1.0 / 5.0 * k5y;
+
+        vx += 16.0 / 135.0 * k1x + 6656.0 / 12825.0 * k3x + 28561.0 / 56430.0 * k4x - 9.0 / 50.0 * k5x + 2.0 / 55.0 * k6x;
+        vy += 16.0 / 135.0 * k1y + 6656.0 / 12825.0 * k3y + 28561.0 / 56430.0 * k4y - 9.0 / 50.0 * k5y + 2.0 / 55.0 * k6y;
+
+        dt = calculateNewStepSize(dt);
     }
 
 };
