@@ -85,6 +85,10 @@ private:
 
         return newDt;
     }
+
+    double calculateError() {
+        // Implement your error calculation method based on the problem characteristics
+    }
 }
 
 };
