@@ -71,5 +71,20 @@ The components are determined by multiplying the gravitational forces with the c
 
         dt = calculateNewStepSize(dt);
     }
+private:
+
+    double calculateNewStepSize(double dt) {
+        double error = calculateError();
+        double safetyFactor = 0.9;
+        double newDt = dt * safetyFactor * pow(1.0 / error, 0.2);
+
+        // Limit the maximum increase in step size
+        if (newDt > 2.0 * dt) {
+            newDt = 2.0 * dt;
+        }
+
+        return newDt;
+    }
+}
 
 };
