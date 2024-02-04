@@ -94,6 +94,8 @@ private:
     void simulateDeepSpaceExploration(Spacecraft& spacecraft, double simulationTime, double& dt) {
     for (double t = 0; t < simulationTime; t += dt) {
         spacecraft.update(dt);
+
+        cout << "Time: " << t << " - Position (x, y): (" << spacecraft.x << ", " << spacecraft.y << ")" << endl;
     }
 }
 };
