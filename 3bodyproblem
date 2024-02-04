@@ -91,5 +91,9 @@ private:
             return 1.0e-8;
     }
 }
-
+    void simulateDeepSpaceExploration(Spacecraft& spacecraft, double simulationTime, double& dt) {
+    for (double t = 0; t < simulationTime; t += dt) {
+        spacecraft.update(dt);
+    }
+}
 };
