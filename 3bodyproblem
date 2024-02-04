@@ -95,6 +95,7 @@ private:
     for (double t = 0; t < simulationTime; t += dt) {
         spacecraft.update(dt);
 
+        // Print spacecraft position at each time step
         cout << "Time: " << t << " - Position (x, y): (" << spacecraft.x << ", " << spacecraft.y << ")" << endl;
     }
 }
