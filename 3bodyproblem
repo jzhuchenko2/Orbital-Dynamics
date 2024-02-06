@@ -99,4 +99,7 @@ private:
         cout << "Time: " << t << " - Position (x, y): (" << spacecraft.x << ", " << spacecraft.y << ")" << endl;
     }
 }
+    int main() {
+    //define spacecraft
+}
 };
