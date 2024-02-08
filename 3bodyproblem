@@ -110,3 +110,15 @@ private:
 
         return 0;
 }
+
+//now for Kepler's equation that everyone speaks about
+M=E−e⋅sin(E)
+
+where:
+
+�
+M is the mean anomaly,
+�
+E is the eccentric anomaly,
+�
+e is the eccentricity of the orbit.
