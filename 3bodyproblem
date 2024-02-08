@@ -105,4 +105,6 @@ private:
         // Simulation parameters
             double simulationTime = 500000.0; // Adjust simulation time based on the desired duration
             double dt = 1000.0;   //initial time step
+
+        simulateDeepSpaceExploration(spacecraft, simulationTime, dt);
 }
