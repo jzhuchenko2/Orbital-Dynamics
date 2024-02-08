@@ -107,4 +107,6 @@ private:
             double dt = 1000.0;   //initial time step
 
         simulateDeepSpaceExploration(spacecraft, simulationTime, dt);
+
+        return 0;
 }
