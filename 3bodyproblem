@@ -122,3 +122,7 @@ M is the mean anomaly,
 E is the eccentric anomaly,
 �
 e is the eccentricity of the orbit.
+
+// Example usage
+    double meanAnomaly = 2.5;     // Example mean anomaly
+    double eccentricity = 0.1;   // Example eccentricity
