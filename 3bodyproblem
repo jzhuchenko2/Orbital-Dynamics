@@ -129,3 +129,6 @@ e is the eccentricity of the orbit.
 
 
    double eccentricAnomaly = solveKeplersEquation(meanAnomaly, eccentricity);
+cout << "Mean Anomaly: " << meanAnomaly << endl;
+    cout << "Eccentricity: " << eccentricity << endl;
+    cout << "Eccentric Anomaly: " << eccentricAnomaly << endl;
