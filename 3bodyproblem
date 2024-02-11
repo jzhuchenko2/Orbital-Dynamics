@@ -132,3 +132,6 @@ e is the eccentricity of the orbit.
 cout << "Mean Anomaly: " << meanAnomaly << endl;
     cout << "Eccentricity: " << eccentricity << endl;
     cout << "Eccentric Anomaly: " << eccentricAnomaly << endl;
+
+return 0;
+}
