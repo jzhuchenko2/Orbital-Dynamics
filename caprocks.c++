@@ -79,6 +79,11 @@ Point gravitationalForce(const Point& position, double rotationSpeed) {
 // function to perform numerical integration using runge-kutta method
 void integrate(Spacecraft& spacecraft, double rotationSpeed, double dt) {
     
+//adding info abt Runga 
+    const double k1 = dt;
+    const double k2 = dt / 2.0;
+    const double k3 = dt / 2.0;
+    const double k4 = dt;
 
     // update velocity and position using Runge-Kutta method
     //spacecraft.velocity += (k1 + k2.5 / force4 * force1 + 2.0 * k2 * force2 + 2.0 * k3 * force3 + k4 * force4) / 6.0;
