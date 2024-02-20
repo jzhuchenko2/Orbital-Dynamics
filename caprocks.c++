@@ -85,6 +85,9 @@ void integrate(Spacecraft& spacecraft, double rotationSpeed, double dt) {
     const double k3 = dt / 2.0;
     const double k4 = dt;
 
+//gravitational force
+    Point force1 = gravitationalForce(spacecraft.position, rotationSpeed);
+
     // update velocity and position using Runge-Kutta method
     //spacecraft.velocity += (k1 + k2.5 / force4 * force1 + 2.0 * k2 * force2 + 2.0 * k3 * force3 + k4 * force4) / 6.0;
     spacecraft.velocity = spacecraft.velocity + (force1 * k1 + force2 * (2.0 * k2) + force3 * (2.0 * k3) + force4 * k4) / 6.0;
