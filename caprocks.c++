@@ -101,3 +101,9 @@ void integrate(Spacecraft& spacecraft, double rotationSpeed, double dt) {
     //spacecraft.position.y += spacecraft.velocity.y * dt;
     //spacecraft.position.z += spacecraft.velocity.z * dt;
 }
+
+// function to apply a simple form of the newman-janis algorithm for rotating black hole
+Point newmanJanis(const Point& position, double rotationSpeed) {
+    // apply a simplified form of the Newman-Janis algorithm
+    double r_perp = std::sqrt(position.x * position.x + position.y * position.y);
+}
