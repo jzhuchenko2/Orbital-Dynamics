@@ -106,4 +106,6 @@ void integrate(Spacecraft& spacecraft, double rotationSpeed, double dt) {
 Point newmanJanis(const Point& position, double rotationSpeed) {
     // apply a simplified form of the Newman-Janis algorithm
     double r_perp = std::sqrt(position.x * position.x + position.y * position.y);
+//arc tangent is a trigonometric function that returns the angle whose tangent is the given ratio. 
+    double phi_bh = std::atan2(position.y, position.x) + rotationSpeed * r_perp / (position.z * c);
 }
