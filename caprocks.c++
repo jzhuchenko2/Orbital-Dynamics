@@ -108,4 +108,6 @@ Point newmanJanis(const Point& position, double rotationSpeed) {
     double r_perp = std::sqrt(position.x * position.x + position.y * position.y);
 //arc tangent is a trigonometric function that returns the angle whose tangent is the given ratio. 
     double phi_bh = std::atan2(position.y, position.x) + rotationSpeed * r_perp / (position.z * c);
+// rotate the position. changing the position of something by rotating it around a point. 
+    double x_rotated = position.x * std::cos(phi_bh) - position.y * std::sin(phi_bh);
 }
