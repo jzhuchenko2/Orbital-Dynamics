@@ -118,7 +118,8 @@ return {x_rotated, y_rotated, position.z};
 
 int main() {
 //execute the plan idiot
-
+// Open a file for writing position data
+    std::ofstream outfile("output.dat");
 
 
 
