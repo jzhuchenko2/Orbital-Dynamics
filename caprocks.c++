@@ -114,3 +114,12 @@ Point newmanJanis(const Point& position, double rotationSpeed) {
     double y_rotated = position.x * std::sin(phi_bh) + position.y * std::cos(phi_bh);
 return {x_rotated, y_rotated, position.z};
 }
+
+
+int main() {
+//execute the plan idiot
+
+
+
+
+}
