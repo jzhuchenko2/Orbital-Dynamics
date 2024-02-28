@@ -110,4 +110,6 @@ Point newmanJanis(const Point& position, double rotationSpeed) {
     double phi_bh = std::atan2(position.y, position.x) + rotationSpeed * r_perp / (position.z * c);
 // rotate the position. changing the position of something by rotating it around a point. 
     double x_rotated = position.x * std::cos(phi_bh) - position.y * std::sin(phi_bh);
+
+return {x_rotated, y_rotated, position.z};
 }
