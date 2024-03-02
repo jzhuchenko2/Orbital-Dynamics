@@ -124,6 +124,6 @@ int main() {
 // Simulation parameters
     const double simulationTime = 1000.0;   // in seconds
     const double dt = 1.0;                   // time step in seconds
-
+const double rotationSpeed = 1.0e-6;    // Rotation speed of the black hole in rad/s (example value)
 
 }
