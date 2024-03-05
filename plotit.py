@@ -28,3 +28,6 @@ ax = fig.add_subplot(111, projection='3d')
 # Plot black hole
 bh_radius = 1.0  # Radius of the black hole
 bh_color = 'black'  # Color of the black hole
+bh_alpha = 0.5  # Transparency of the black hole
+u = np.linspace(0, 2 * np.pi, 100)
+
