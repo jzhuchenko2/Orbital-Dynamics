@@ -23,3 +23,8 @@ u_new = np.linspace(0, 1, 1000)
 fig = plt.figure(figsize=(10, 8))
 
 ax = fig.add_subplot(111, projection='3d')
+
+
+# Plot black hole
+bh_radius = 1.0  # Radius of the black hole
+bh_color = 'black'  # Color of the black hole
