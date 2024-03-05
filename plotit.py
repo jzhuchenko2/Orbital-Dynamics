@@ -16,5 +16,10 @@ z = data[:, 3]
 #we're getting somewhere now. hold on 
 # Smooth the spacecraft trajectory using spline interpolation
 tck, u = splprep([x, y, z], s=0)
+tck, u = splprep([x, y, z], s=0)
+u_new = np.linspace(0, 1, 1000)
+
+# Create figure and 3D axis
+fig = plt.figure(figsize=(10, 8))
 
 ax = fig.add_subplot(111, projection='3d')
