@@ -132,7 +132,8 @@ const double rotationSpeed = 1.0e-6;    // Rotation speed of the black hole in r
     for (double t = 0; t <= simulationTime; t += dt) {
         integrate(spacecraft, rotationSpeed, dt);
         spacecraft.position = newmanJanis(spacecraft.position, rotationSpeed);
-
+// Write position data to file
+        outfile << t << " " << spacecraft.position.x << " " << spacecraft.position.y << " " << spacecraft.position.z << "\n";
     
     }
 }
