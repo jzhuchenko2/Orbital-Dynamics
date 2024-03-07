@@ -128,5 +128,11 @@ const double rotationSpeed = 1.0e-6;    // Rotation speed of the black hole in r
 
     // Initial conditions for the spacecraft
     Spacecraft spacecraft(1e6, 0, 1e4, 0, 2e4, 0); // Placed at (x=1e6, y=0, z=1e4) with initial velocity in y-direction
+// Perform the simulation
+    for (double t = 0; t <= simulationTime; t += dt) {
+        integrate(spacecraft, rotationSpeed, dt);
+        spacecraft.position = newmanJanis(spacecraft.position, rotationSpeed);
 
+    
+    }
 }
