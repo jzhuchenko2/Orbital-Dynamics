@@ -31,3 +31,7 @@ bh_color = 'black'  # Color of the black hole
 bh_alpha = 0.5  # Transparency of the black hole
 u = np.linspace(0, 2 * np.pi, 100)
 v = np.linspace(0, np.pi, 100)
+
+x_bh = bh_radius * np.outer(np.cos(u), np.sin(v))
+y_bh = bh_radius * np.outer(np.sin(u), np.sin(v))
+z_bh = bh_radius * np.outer(np.ones(np.size(u)), np.cos(v))
