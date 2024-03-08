@@ -135,5 +135,10 @@ const double rotationSpeed = 1.0e-6;    // Rotation speed of the black hole in r
 // Write position data to file
         outfile << t << " " << spacecraft.position.x << " " << spacecraft.position.y << " " << spacecraft.position.z << "\n";
     
+
+// Close the file
+    outfile.close();
+
+    return 0;
     }
 }
