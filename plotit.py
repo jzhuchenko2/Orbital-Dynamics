@@ -36,3 +36,4 @@ x_bh = bh_radius * np.outer(np.cos(u), np.sin(v))
 y_bh = bh_radius * np.outer(np.sin(u), np.sin(v))
 z_bh = bh_radius * np.outer(np.ones(np.size(u)), np.cos(v))
 ax.plot_surface(x_bh, y_bh, z_bh, color=bh_color, alpha=bh_alpha)
+
