@@ -39,3 +39,4 @@ ax.plot_surface(x_bh, y_bh, z_bh, color=bh_color, alpha=bh_alpha)
 
 # Initialize spacecraft plot
 line, = ax.plot([], [], [], label='Spacecraft Path', color='blue', linestyle='-', linewidth=2)
+point, = ax.plot([], [], [], [], marker='o', markersize=10, color='blue')
