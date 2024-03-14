@@ -44,3 +44,4 @@ point, = ax.plot([], [], [], [], marker='o', markersize=10, color='blue')
 # Set plot labels and title
 ax.set_xlabel('X')
 ax.set_ylabel('Y')
+ax.set_zlabel('Z')
