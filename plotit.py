@@ -49,3 +49,6 @@ ax.set_title('Real-time Spacecraft Trajectory around Black Hole')
 
 # Set equal aspect ratio
 ax.set_box_aspect([1, 1, 1])
+
+# Set initial view angle
+ax.view_init(elev=30, azim=-45)
