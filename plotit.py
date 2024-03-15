@@ -55,3 +55,4 @@ ax.view_init(elev=30, azim=-45)
 
 def update(frame):
     t = time[frame]
+    x_smooth, y_smooth, z_smooth = splev(u_new, tck)
