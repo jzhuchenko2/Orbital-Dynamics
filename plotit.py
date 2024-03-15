@@ -52,3 +52,6 @@ ax.set_box_aspect([1, 1, 1])
 
 # Set initial view angle
 ax.view_init(elev=30, azim=-45)
+
+def update(frame):
+    t = time[frame]
