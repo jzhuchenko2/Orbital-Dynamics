@@ -56,3 +56,7 @@ ax.view_init(elev=30, azim=-45)
 def update(frame):
     t = time[frame]
     x_smooth, y_smooth, z_smooth = splev(u_new, tck)
+
+    # Update spacecraft trajectory
+    line.set_data(x_smooth[:frame+1], y_smooth[:frame+1])
+    line.set_3d_properties(z_smooth[:frame+1])
