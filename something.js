@@ -9,3 +9,6 @@ const material = new THREE.ShaderMaterial({
     fragmentShader: fragmentShaderSource,
 });
 //this would have to work w/ some glsl code to work.
+
+const geometry = new THREE.SphereGeometry(1, 32, 32);
+//constant geometry, cmon man
