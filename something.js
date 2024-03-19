@@ -12,3 +12,7 @@ const material = new THREE.ShaderMaterial({
 
 const geometry = new THREE.SphereGeometry(1, 32, 32);
 //constant geometry, cmon man
+
+const mesh = new THREE.Mesh(geometry, material);
+scene.add(mesh);
+//gotta add mesh, cmon now 
