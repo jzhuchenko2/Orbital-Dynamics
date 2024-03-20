@@ -63,3 +63,24 @@ def update(frame):
     line.set_3d_properties(z_smooth[:frame+1])
 '''
 #yes im commenting this out. Lets hold our horses
+
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib.animation import FuncAnimation
+import numpy as np
+
+# Function to read position data from file
+def read_position_data(file_path):
+    with open(file_path, 'r') as file:
+        data = file.readlines()
+    time = []
+    x_positions = []
+    y_positions = []
+    z_positions = []
+    for line in data:
+        t, x, y, z = map(float, line.split())
+        time.append(t)
+        x_positions.append(x)
+        y_positions.append(y)
+        z_positions.append(z)
+    return time, x_positions, y_positions, z_positions
