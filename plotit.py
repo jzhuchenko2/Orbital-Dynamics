@@ -1,3 +1,4 @@
+'''
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -60,3 +61,5 @@ def update(frame):
     # Update spacecraft trajectory
     line.set_data(x_smooth[:frame+1], y_smooth[:frame+1])
     line.set_3d_properties(z_smooth[:frame+1])
+'''
+#yes im commenting this out. Lets hold our horses
