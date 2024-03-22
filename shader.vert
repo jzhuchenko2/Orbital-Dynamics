@@ -6,7 +6,7 @@
 #define _Size 0.3 //size of BH
 
 float hash(float x){ return fract(sin(x)*152754.742);}
-float hash(vec2 x){	return hash(x.x + hash(x.y));}
+float hash(vec2 x){ return hash(x.x + hash(x.y));}
 
 float value(vec2 p, float f) //value noise
 {
@@ -15,5 +15,9 @@ float value(vec2 p, float f) //value noise
     float tl = hash(floor(p*f + vec2(0.,1.)));
     float tr = hash(floor(p*f + vec2(1.,1.)));
     
-    
+    vec2 fr = fract(p*f);    
+    fr = (3. - 2.*fr)*fr*fr;	
+    float b = mix(bl, br, fr.x);	
+    float t = mix(tl, tr, fr.x);
+    return  mix(b,t, fr.y);
 }
