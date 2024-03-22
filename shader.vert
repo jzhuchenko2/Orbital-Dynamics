@@ -26,3 +26,8 @@ vec4 background(vec3 ray)
 {
     vec2 uv = ray.xy;
 }
+
+if( abs(ray.x) > 0.5)
+        uv.x = ray.z;
+    else if( abs(ray.y) > 0.5)
+        uv.y = ray.z;
