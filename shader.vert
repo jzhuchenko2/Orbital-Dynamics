@@ -21,3 +21,8 @@ float value(vec2 p, float f) //value noise
     float t = mix(tl, tr, fr.x);
     return  mix(b,t, fr.y);
 }
+
+vec4 background(vec3 ray)
+{
+    vec2 uv = ray.xy;
+}
