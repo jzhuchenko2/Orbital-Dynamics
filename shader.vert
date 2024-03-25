@@ -31,3 +31,7 @@ if( abs(ray.x) > 0.5)
         uv.x = ray.z;
     else if( abs(ray.y) > 0.5)
         uv.y = ray.z;
+
+    float brightness = value( uv*3., 100.); //(poor quality) "stars" created from value noise
+    float color = value( uv*2., 20.); 
+    brightness = pow(brightness, 256.);
