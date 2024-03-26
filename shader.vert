@@ -25,7 +25,6 @@ float value(vec2 p, float f) //value noise
 vec4 background(vec3 ray)
 {
     vec2 uv = ray.xy;
-}
 
 if( abs(ray.x) > 0.5)
         uv.x = ray.z;
@@ -35,3 +34,7 @@ if( abs(ray.x) > 0.5)
     float brightness = value( uv*3., 100.); //(poor quality) "stars" created from value noise
     float color = value( uv*2., 20.); 
     brightness = pow(brightness, 256.);
+
+    brightness = brightness*100.;
+    brightness = clamp(brightness, 0., 1.);
+}
