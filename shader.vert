@@ -39,4 +39,8 @@ if( abs(ray.x) > 0.5)
     brightness = clamp(brightness, 0., 1.);
 
     vec3 stars = brightness * mix(vec3(1., .6, .2), vec3(.2, .6, 1), color);
+
+    vec4 nebulae = texture(iChannel0, (uv*1.5 ));
+    nebulae.xyz += nebulae.xxx + nebulae.yyy + nebulae.zzz; //average color
+    nebulae.xyz *= 0.25;
 }
