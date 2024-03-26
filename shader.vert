@@ -37,4 +37,6 @@ if( abs(ray.x) > 0.5)
 
     brightness = brightness*100.;
     brightness = clamp(brightness, 0., 1.);
+
+    vec3 stars = brightness * mix(vec3(1., .6, .2), vec3(.2, .6, 1), color);
 }
