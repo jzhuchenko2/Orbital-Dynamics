@@ -53,3 +53,8 @@ if( abs(ray.x) > 0.5)
 nebulae.xyz += stars;
 	return nebulae;
 }
+vec4 raymarchDisk(vec3 ray, vec3 zeroPos)
+{
+//return vec4(1.,1.,1.,0.); //no disk
+
+}
