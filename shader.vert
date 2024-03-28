@@ -49,4 +49,7 @@ if( abs(ray.x) > 0.5)
     nebulae*= nebulae;
     nebulae*= nebulae;
 //adding for nebulae refernce pointers.
+
+nebulae.xyz += stars;
+	return nebulae;
 }
