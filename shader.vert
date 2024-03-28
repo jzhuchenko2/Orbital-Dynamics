@@ -43,4 +43,10 @@ if( abs(ray.x) > 0.5)
     vec4 nebulae = texture(iChannel0, (uv*1.5 ));
     nebulae.xyz += nebulae.xxx + nebulae.yyy + nebulae.zzz; //average color
     nebulae.xyz *= 0.25;
+
+    nebulae*= nebulae;
+    nebulae*= nebulae;
+    nebulae*= nebulae;
+    nebulae*= nebulae;
+//adding for nebulae refernce pointers.
 }
