@@ -58,4 +58,5 @@ vec4 raymarchDisk(vec3 ray, vec3 zeroPos)
 //return vec4(1.,1.,1.,0.); //no disk
 vec3 position = zeroPos; // starting the position at null for future lengths of xz
 float lengthPos = length(position.xz);
+    float dist = min(1., lengthPos*(1./_Size) *0.5) * _Size * 0.4 *(1./_Steps) /( abs(ray.y) );
 }
