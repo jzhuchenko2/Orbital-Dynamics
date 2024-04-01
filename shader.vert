@@ -63,5 +63,5 @@ float lengthPos = length(position.xz);
 position += dist*_Steps*ray*0.5;   
 
 vec2 deltaPos;
-    
+deltaPos.x = -zeroPos.z*0.01 + zeroPos.x;
 }
