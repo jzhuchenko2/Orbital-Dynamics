@@ -65,4 +65,5 @@ position += dist*_Steps*ray*0.5;
 vec2 deltaPos;
 deltaPos.x = -zeroPos.z*0.01 + zeroPos.x;
 deltaPos.y = zeroPos.x*0.01 + zeroPos.z;
+deltaPos = normalize(deltaPos - zeroPos.xz);
 }
