@@ -69,4 +69,5 @@ deltaPos = normalize(deltaPos - zeroPos.xz);
 //entire delta position is normalized. 
 
 float parallel = dot(ray.xz, deltaPos);
+parallel /= sqrt(lengthPos);
 }
