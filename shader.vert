@@ -70,4 +70,5 @@ deltaPos = normalize(deltaPos - zeroPos.xz);
 
 float parallel = dot(ray.xz, deltaPos);
 parallel /= sqrt(lengthPos);
+parallel *= 0.5; // reduce the value to half
 }
