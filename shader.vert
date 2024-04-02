@@ -66,4 +66,7 @@ vec2 deltaPos;
 deltaPos.x = -zeroPos.z*0.01 + zeroPos.x;
 deltaPos.y = zeroPos.x*0.01 + zeroPos.z;
 deltaPos = normalize(deltaPos - zeroPos.xz);
+//entire delta position is normalized. 
+
+float parallel = dot(ray.xz, deltaPos);
 }
