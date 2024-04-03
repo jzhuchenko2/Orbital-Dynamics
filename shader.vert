@@ -72,4 +72,6 @@ float parallel = dot(ray.xz, deltaPos);
 parallel /= sqrt(lengthPos);
 parallel *= 0.5; // reduce the value to half
 float redShift = parallel +0.3; //initialize it & modify the value of parallel like before
+
+redShift *= redShift; //yessir
 }
