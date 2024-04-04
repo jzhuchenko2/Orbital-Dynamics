@@ -77,4 +77,9 @@ redShift *= redShift; //yessir
 
 vec4 o = vec4(0.); //parameter at 0.
 
+
+for(float i = 0. ; i < _Steps; i++)
+    {  
+	position -= dist * ray ;  
+	}
 }
