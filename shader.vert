@@ -74,4 +74,7 @@ parallel *= 0.5; // reduce the value to half
 float redShift = parallel +0.3; //initialize it & modify the value of parallel like before
 
 redShift *= redShift; //yessir
+
+vec4 o = vec4(0.); //parameter at 0.
+
 }
