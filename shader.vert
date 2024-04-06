@@ -83,5 +83,7 @@ for(float i = 0. ; i < _Steps; i++)
 	position -= dist * ray;
 
 	float intensity =clamp( 1. - abs((i - 0.8) * (1./_Steps) * 2.), 0., 1.);
+	float lengthPos = length(position.xz); //calculates the Euclidean length 
+        
 	}
 }
