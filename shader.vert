@@ -89,5 +89,7 @@ for(float i = 0. ; i < _Steps; i++)
 	distMult *=  clamp((lengthPos -  _Size * 0.75) * (1./_Size) * 1.5, 0., 1.);
 	distMult *= clamp(( _Size * 10. -lengthPos) * (1./_Size) * 0.20, 0., 1.);
 	distMult *= distMult;
+
+	float u = lengthPos + iTime* _Size*0.3 + intensity * _Size * 0.2; //scales the time
 	}
 }
