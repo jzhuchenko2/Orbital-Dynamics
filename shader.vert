@@ -86,6 +86,7 @@ for(float i = 0. ; i < _Steps; i++)
 	float lengthPos = length(position.xz); //calculates the Euclidean length 
         float distMult = 1.; //scalar multiplier for distances in subsequent calculations.
 
-	distMult *=  clamp((lengthPos -  _Size * 0.75) * (1./_Size) * 1.5, 0., 1.);   
+	distMult *=  clamp((lengthPos -  _Size * 0.75) * (1./_Size) * 1.5, 0., 1.);
+	distMult *= clamp(( _Size * 10. -lengthPos) * (1./_Size) * 0.20, 0., 1.);
 	}
 }
