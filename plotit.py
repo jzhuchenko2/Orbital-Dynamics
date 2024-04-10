@@ -63,7 +63,7 @@ def update(frame):
     line.set_3d_properties(z_smooth[:frame+1])
 '''
 #yes im commenting this out. Lets hold our horses
-
+'''
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.animation import FuncAnimation
@@ -84,3 +84,17 @@ def read_position_data(file_path):
         y_positions.append(y)
         z_positions.append(z)
     return time, x_positions, y_positions, z_positions
+'''
+# im seeing more visions from the world above
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib.animation import FuncAnimation
+
+# Constants
+G = 6.67430e-11  #gravitational constant (m^3/kg/s^2)
+c = 3.0e8        # classic speed of light (m/s)
+M1 = 10         # mass of first black hole (in olar masses)
+M2 = 5          #mass of second black hole
+R_s1 = (2 * G * M1 * 1.98847e30) / c**2  # Schwarzschild radius of the 1st black hole (m)
+R_s2 = (2 * G * M2 * 1.98847e30) / c**2  # Schwarzschild radius of 2nd Bh
