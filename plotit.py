@@ -98,3 +98,7 @@ M1 = 10         # mass of first black hole (in olar masses)
 M2 = 5          #mass of second black hole
 R_s1 = (2 * G * M1 * 1.98847e30) / c**2  # Schwarzschild radius of the 1st black hole (m)
 R_s2 = (2 * G * M2 * 1.98847e30) / c**2  # Schwarzschild radius of 2nd Bh
+
+
+# Now we must calculate positions of the Lagrange point L4 relative to the second black hole
+L4_x = R_s2 * np.cos(np.pi/3)
