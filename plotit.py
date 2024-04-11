@@ -104,3 +104,6 @@ R_s2 = (2 * G * M2 * 1.98847e30) / c**2  # Schwarzschild radius of 2nd Bh
 L4_x = R_s2 * np.cos(np.pi/3)
 L4_y = R_s2 * np.sin(np.pi/3)
 L4_z = 0
+
+# Define orbit parameters
+num_points = 500
