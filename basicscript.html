@@ -16,5 +16,8 @@
 
     renderer.setSize(window.innerWidth, window.innerHeight); //canvas covers the entire visible area
     document.getElementById('scene-container').appendChild(renderer.domElement); 
+
+    // Create a black hole in the middle. or sort of lol haha :|
+        const blackHoleGeometry = new THREE.SphereGeometry(0.5, 64, 64);
 </body>
 </html>
