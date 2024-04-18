@@ -26,5 +26,6 @@
         const satelliteGeometry = new THREE.BoxGeometry(0.2, 0.2, 0.2);
         const satelliteMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
     const satellite = new THREE.Mesh(satelliteGeometry, satelliteMaterial); //meshing satellite altogether
+    scene.add(satellite); //now we add it to the entire platform
 </body>
 </html>
