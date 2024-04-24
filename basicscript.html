@@ -56,6 +56,8 @@
     function updateSatellitePosition() {
         const currentTime = (Date.now() / 1000) % 10; // time in seconds modulo 10 to loop animation
         const index = Math.floor(currentTime); //simple index of current trajectory point 
+
+        const t = currentTime - index; // Interpolation factor between current and next trajectory points
             };
 </body>
 </html>
