@@ -10,3 +10,16 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gif.js/dist/gif.js"></script>
     <style>
+        /* CSS code for the orbit path and circle */
+      #orbit-path {
+        position: absolute;
+        width: 80vw; /* Adjust the width of the orbit path as needed */
+        height: 80vw; /* Adjust the height of the orbit path as needed */
+        border: 1px dashed rgba(255, 0, 0, 0.5); /* Dashed red border */
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none; /* Ensure the path doesn't interfere with mouse events */
+        z-index: -1; /* Position the orbit path behind the circle */
+      }
